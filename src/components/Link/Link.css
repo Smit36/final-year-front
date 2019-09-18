@@ -1,0 +1,20 @@
+.Link{
+    margin:1%;
+    width:10%;
+}
+.Signup-page{    
+    margin-left:2px;
+    padding:7px 10px;
+    background-color:rgb(211, 98, 98); 
+    border-radius: 5%; 
+    color:white;  
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-size: 120%;
+    font-weight:500;
+}
+.Signup-page:hover{      
+    background-color: rgb(212, 75, 75);   
+    transition:0.4s;
+    cursor:pointer;
+}

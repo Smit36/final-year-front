@@ -1,0 +1,44 @@
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    color: rgb(211, 98, 98);
+    border-bottom: 1px solid rgb(211, 209, 209);
+    background-color: rgb(241, 241, 241);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    flex-direction: row;
+    box-shadow: 3px 4px 20px 5px #ebeaea;
+    font-size: calc(2px + 2vmin);
+}
+
+.header-name {
+    margin-left: 3%;
+    font-family: sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.menu-icon,
+.menu-close {
+    margin-left: 2%;
+    align-items: center;
+    padding: 7px 10px;
+}
+
+.menu-close {
+    display: none;
+}
+
+.menu-icon:hover,
+.menu-close:hover {
+    color: rgb(233, 147, 147);
+    background-color: rgb(212, 211, 211);
+    border-radius: 50%;
+    cursor: pointer;
+}

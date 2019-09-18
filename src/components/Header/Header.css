@@ -1,0 +1,20 @@
+.Header {
+    color: rgb(211, 98, 98);
+    border-bottom: 1px solid rgb(211, 209, 209);
+    background-color: rgb(241, 241, 241);
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    flex-direction: row;
+    box-shadow: 3px 4px 20px 5px #ebeaea;
+    font-size: calc(2px + 2vmin);
+}
+
+.Header-name {
+    margin-left: 5%;
+    font-family: sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}

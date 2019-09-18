@@ -1,0 +1,56 @@
+.signup-page {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    display: inline;
+    color: white;
+    margin: 1%;
+    background-color: rgb(211, 98, 98);
+    border-radius: 100%;
+    padding: 7px 10px;
+}
+
+.signup-form {
+    margin-top: 3%;
+}
+
+.Error-Message {
+    display: inline;
+    color: red;
+    font-size: 0.90em;
+    display: relative;
+}
+
+.sign-username,
+.sign-password,
+.sign-button-inside {
+    width: 60%;
+}
+
+.sign-button button {
+    margin-top: 3%;
+}
+
+.sign-forget {
+    text-decoration: none;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Firstname,
+.Lastname {
+    width: 49%;
+}
+
+.Email input {
+    width: 100%;
+}

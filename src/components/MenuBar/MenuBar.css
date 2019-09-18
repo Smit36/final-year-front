@@ -1,0 +1,33 @@
+.menu {
+    transition-delay: 1s;
+    background-color: rgb(241, 241, 241);
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-name {
+    margin-top: 10%;
+    color: rgb(211, 98, 98);
+}
+
+.menu-box {
+    margin-top: 35%;
+    margin-right: 5%;
+}
+
+.menu-items {
+    text-decoration: none;
+    padding-left: 20%;
+    color: gray;
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-items:hover {
+    color: rgb(211, 98, 98);
+    transition: 0.3s;
+    cursor: pointer;
+}
