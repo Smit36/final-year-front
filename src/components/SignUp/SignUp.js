@@ -122,18 +122,17 @@ class SignUp extends Component {
                                     name='firstname'
                                     margin="dense"
                                     variant="outlined"
+                                    error={true}
+                                    helperText='not allowed empty'
                                     required
                                     noValidate
                                     onChange={this.handleChange}
                                  />          
-                                 {formErrors.firstname.length > 0 &&(
-                                    <span className='Error-Message'>{formErrors.firstname}</span>
-                              )}                      
+                                                    
                               </div>
                               
                               <div className='Lastname'>
                                  <TextField
-
                                     id="outlined-dense"
                                     label="Lastname"
                                     name='lastname'
@@ -143,9 +142,6 @@ class SignUp extends Component {
                                     noValidate
                                     onChange={this.handleChange}
                                  />
-                                 {formErrors.lastname.length > 0 &&(
-                                    <span className='Error-Message'>{formErrors.lastname}</span>
-                                 )}
                               </div>
                            </div>
                            <div className='Email'>
@@ -178,9 +174,6 @@ class SignUp extends Component {
                                  noValidate
                                  onChange={this.handleChange}
                               />
-                              {formErrors.password.length > 0 &&(
-                                    <span className='Error-Message'>{formErrors.password}</span>
-                                 )}
                            </div>
                            <div className='Confirm-Password'>
                               <TextField

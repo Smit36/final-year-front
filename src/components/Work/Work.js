@@ -32,12 +32,7 @@ class Work extends Component {
         return (
             <div className='Work'>
                 <div className='Content'>
-                    <div className='MenuBar'>
-                        <MenuBar show={this.state.showMenu} handleComponentChange={this.handleComponentChange} />
-                    </div>
-                    <div className='CreateProject'>
-                        <CreateProject create={this.state.showProject} createProject={this.createProject} />
-                    </div>
+                    <MenuBar show={this.state.showMenu} handleComponentChange={this.handleComponentChange} />
                     <div className='ShowContent'>
                         <div className='Menu'>
                             <Menu name={this.state.name} handleToggleClick={this.handleToggleClick} />

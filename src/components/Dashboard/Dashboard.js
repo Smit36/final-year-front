@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Typography, TextField, FormControlLabel, Checkbox, Button, Card, CardActions, CardContent } from '@material-ui/core'
+import { Grid, Typography, TextField, FormControlLabel, Checkbox, Button, Card, CardActions, CardContent, Fade, Modal, Backdrop } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import CreateProject from '../CreateProject/CreateProject';
 import './Dashboard.css';
 
-
-
 class Dashboard extends Component {
     constructor(props) {
         super(props);
-        this.state = {  showProject: false }
-    }    
+        this.state = { showProject: false }
+    }
+
     createProject = () => {
         this.setState({
-            showProject: true
+            showProject: !this.state.showProject
         });
     }
 
     render() {
         return (
             <div className='Dashboard'>
-                
                 <div className='message'>
                     <Card>
                         <CardContent>
@@ -36,10 +34,28 @@ class Dashboard extends Component {
                     </Card>
                 </div>
                 <div className='new'>
-                    <Button variant="contained" size="medium" color="primary" className='new-button' onClick={this.props.createProject}>
+                    <Button variant="contained" size="medium" color="primary" className='new-button' onClick={this.createProject}>
                         Create New Project
                     </Button>
                 </div>
+                {this.state.showProject &&
+                    (
+                        <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            open={this.state.showProject}
+                            onClose={this.createProject}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                                timeout: 500,
+                            }}
+                        >
+                            <Fade in={this.state.showProject}>
+                                <CreateProject />
+                            </Fade>
+                        </Modal>
+                    )}
             </div>
         );
     }

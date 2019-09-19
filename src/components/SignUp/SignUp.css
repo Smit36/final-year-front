@@ -1,5 +1,5 @@
 .signup-page {
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,8 +26,6 @@
     display: relative;
 }
 
-.sign-username,
-.sign-password,
 .sign-button-inside {
     width: 60%;
 }
@@ -49,6 +47,14 @@
 .Firstname,
 .Lastname {
     width: 49%;
+}
+
+.Firstname>div,
+.Lastname>div,
+.Email>div,
+.Password>div,
+.Confirm-Password>div {
+    height: 57px;
 }
 
 .Email input {

@@ -6,11 +6,9 @@ import { Button } from '@material-ui/core'
 import './Home.css'
 
 class Home extends Component {
-
     render() {
         return (
             <div className="Home">
-
                 <div className='Header-Component'>
                     <div className="Header">
                         <div className="Header-name">
@@ -23,7 +21,7 @@ class Home extends Component {
                         </div>
                         <div className='Header-Signup-Button'>
                             <Link to='/signup'>
-                            <Button variant='contained' size='medium'>Free Trial</Button>
+                                <Button variant='contained' size='medium'>Free Trial</Button>
                             </Link>
                         </div>
                     </div>
@@ -32,7 +30,7 @@ class Home extends Component {
                     <div className="Home-first">
                         <div className="Home-first-left">
                             Do your best work,all in one suite.
-                        <div>
+                            <div>
                                 <Link to='/signup'>
                                     <Button variant='contained' size='large'>Free Trial</Button>
                                 </Link>

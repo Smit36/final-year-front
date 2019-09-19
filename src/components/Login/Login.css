@@ -38,7 +38,9 @@ form {
 
 .sign-remember {
     margin-top: 10px;
-    margin-left: 10%;
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-start;
 }
 
 .sign-button {

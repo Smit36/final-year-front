@@ -6,7 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import './Menu.css';
 
 class Menu extends Component {
-    
+
    
     render() {
         return (
